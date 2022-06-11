@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ส่วนนี้เอาไว้ import internal file เช่นไฟล์ css และ 3rd-party เช่น google fonts  ต้อง import ภายใน tag <head> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ไฟล์ CSS  -->
+    <link rel="stylesheet" href="./css/mystyle.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Title Here!</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Reuseable Components ดูได้จากไฟล์ /js/main.js -->
+      <header>
+        <!-- Reuseable Navbar -->
+        <custom-navbar></custom-navbar>
+      </header>
+      <main>
+        <h1>MORE PAGE</h1>
+        <!-- Reuseable Card -->
+        <custom-card></custom-card>
+      </main>
+      <!-- Reuseable Footer -->
+      <custom-footer></custom-footer>
+    </div>
+    <!-- ส่วนนี้เอไว้ import ไฟล์ js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

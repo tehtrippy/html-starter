@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ส่วนนี้เอาไว้ import internal file เช่นไฟล์ css และ 3rd-party เช่น google fonts  ต้อง import ภายใน tag <head> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ไฟล์ CSS  -->
+    <link rel="stylesheet" href="./css/mystyle.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Title Here!</title>
+  </head>
+  <!-- tag <body> ส่วนนี้เป็นส่วนเนื้อหาภายในเว็บไซต์หรือเป็นที่ใส่ components ต่างๆ เช่น navbar, footer  -->
+  <body>
+    <div class="container">
+      <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <a href="index.html" class="navbar-item">HOME</a>
+          <a href="more.html" class="navbar-item">MORE</a>
+        </nav>
+      </header>
+      <main>
+        <h1>HOME PAGE</h1>
+        <!-- Card -->
+        <div class="card-container">
+          <!-- News 01 -->
+          <div class="card" onclick="onClickAlert('News 01')">
+            <img src="./images/1.jpeg" class="card-img" />
+            <h2>News 01</h2>
+            <p>
+              Ex nostrud dolore occaecat proident in commodo incididunt. Magna
+              anim reprehenderit sit commodo aute cillum laborum esse pariatur.
+              Quis non pariatur in quis magna reprehenderit laboris culpa.
+              Consequat cupidatat ad pariatur deserunt nisi ex reprehenderit.
+              Velit duis aliqua nostrud cillum.
+            </p>
+          </div>
+          <!-- News 02 -->
+          <div class="card" onclick="onClickAlert('News 02')">
+            <img src="./images/2.jpeg" class="card-img" />
+            <h2>News 02</h2>
+            <p>
+              Ex nostrud dolore occaecat proident in commodo incididunt. Magna
+              anim reprehenderit sit commodo aute cillum laborum esse pariatur.
+              Quis non pariatur in quis magna reprehenderit laboris culpa.
+              Consequat cupidatat ad pariatur deserunt nisi ex reprehenderit.
+              Velit duis aliqua nostrud cillum.
+            </p>
+          </div>
+          <!-- News 03 -->
+          <div class="card" onclick="onClickAlert('News 03')">
+            <img src="./images/3.jpeg" class="card-img" />
+            <h2>News 03</h2>
+            <p>
+              Ex nostrud dolore occaecat proident in commodo incididunt. Magna
+              anim reprehenderit sit commodo aute cillum laborum esse pariatur.
+              Quis non pariatur in quis magna reprehenderit laboris culpa.
+              Consequat cupidatat ad pariatur deserunt nisi ex reprehenderit.
+              Velit duis aliqua nostrud cillum.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">FOOTER</footer>
+    </div>
+    <!-- ส่วนนี้เอไว้ import ไฟล์ js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

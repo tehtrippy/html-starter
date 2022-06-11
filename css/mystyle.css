@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 24px
+}
+
+.container {
+    /* กำหนดให้ขนาดเริ่มต้นของ container คือ 100vh (100% ของจอ) */
+    min-height: 100vh;
+    /* กำหนด flex */
+    display: flex;
+    /* กำหนด direction ของ flex */
+    flex-direction: column;
+    /* กำหนดรูปแบบการจัดเรียงของ flex items */
+    justify-content: space-between;
+}
+
+/* navbar */
+.navbar {
+    background: black;
+    padding: 20px 16px;
+}
+
+/* navbar items */
+.navbar-item {
+    margin-right: 6px;
+    color: white;
+    /* เอาเส้นขีดล่างออก เนื่องจาก navbar item ใช้เป็น tag <a> โดย default มันแล้วจะมีขีดมาให้ */
+    text-decoration: unset;
+}
+
+/* navbar items hover effect */
+.navbar-item:hover {
+    color: red;
+}
+
+/* footer */
+.footer {
+    color: white;
+    background: red;
+    padding: 20px 16px;
+}
+
+/* card container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* img on card */
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
